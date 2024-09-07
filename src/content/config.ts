@@ -25,3 +25,16 @@ const blog = defineCollection({
 });
 
 export const collections = { blog };
+
+// file: src/config.ts
+export const SITE = {
+  website: "https://peyblog.wiki/",
+  author: "Yu Perng",
+  desc: "生活志",
+  title: "Yu Perng's Blog",
+  ogImage: "astropaper-og.jpg",
+  lightAndDarkMode: true,
+  postPerPage: 3,
+  scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
+};
+
