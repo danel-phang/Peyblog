@@ -4,11 +4,11 @@ description: 在 Frosti 中使用 MDX 通过更多组件丰富文章内容
 pubDate: 07 12 2024
 image: https://saroprock.oss-cn-hangzhou.aliyuncs.com/img/diary-968592_1280.jpg
 categories:
-  - tech
+  - 技术
 tags:
   - Frosti
-  - Blog
-  - Project
+  - 博客
+  - 项目
 ---
 
 import Collapse from "../../components/blog/collapse.astro";
@@ -61,7 +61,7 @@ import LinkCard from "../../components/page/LinkCard.astro";
 </Collapse>
 ```
 
-#### Diff
+#### Diff不同
 
 <Diff r="/r.png" l="/l.png"></Diff>
 
@@ -69,7 +69,7 @@ import LinkCard from "../../components/page/LinkCard.astro";
 <Diff r="/r.png" l="/l.png"></Diff>
 ```
 
-#### Error
+#### Error错误
 
 <Error>Maybe something went wrong? </Error>
 
@@ -77,7 +77,7 @@ import LinkCard from "../../components/page/LinkCard.astro";
 <Error>Maybe something went wrong? </Error>
 ```
 
-#### Warning
+#### Warning警告
 
 <Warning>Hey! Watch out for potholes! </Warning>
 
@@ -85,7 +85,7 @@ import LinkCard from "../../components/page/LinkCard.astro";
 <Warning>Hey! Watch out for potholes! </Warning>
 ```
 
-#### Message
+#### Message消息
 
 <Info>It's just a message. </Info>
 
@@ -93,12 +93,12 @@ import LinkCard from "../../components/page/LinkCard.astro";
 <Info>It's just a message. </Info>
 ```
 
-#### Success
+#### Success成功
 
-<Success>Congratulations on your successful deployment! </Success>
+<Success>恭喜您部署成功！ </Success>
 
 ```astro
-<Success>Congratulations on your successful deployment! </Success>
+<Success>恭喜您部署成功！ </Success>
 ```
 
 #### Kbd
@@ -109,7 +109,7 @@ import LinkCard from "../../components/page/LinkCard.astro";
 <Kbd>Ctrl</Kbd> + <Kbd>C</Kbd> to copy the text.
 ```
 
-#### TimeLine
+#### TimeLine时间线
 
 <TimeLine
   items={[
@@ -133,7 +133,7 @@ import LinkCard from "../../components/page/LinkCard.astro";
 />
 ```
 
-#### LinkCard
+#### LinkCard链接卡片
 
 <LinkCard
   title="Frosti"
@@ -149,4 +149,36 @@ import LinkCard from "../../components/page/LinkCard.astro";
   url="https://github.com/EveSunMaple/Frosti"
   img="/favicon.ico"
 />
+```
+
+### Little LinkCard多链接卡片
+<div class="grid grid-cols-2 gap-4">
+  <LinkCard
+    title="博客"
+    desc="想到的与看到的"
+    url="https://www.peyblog.wiki/blog"
+  />
+
+  <LinkCard
+    title="项目"
+    desc="想法的实现"
+    url="https://www.peyblog.wiki/project"
+  />
+</div>
+
+```astro
+<div class="grid grid-cols-2 gap-4">
+  <LinkCard
+    title="博客"
+    desc="想到的与看到的"
+    url="https://www.peyblog.wiki/blog"
+  />
+
+  <LinkCard
+    title="项目"
+    desc="想法的实现"
+    url="https://www.peyblog.wiki/project"
+  />
+</div>
+
 ```

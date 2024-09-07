@@ -10,48 +10,49 @@ import Warning from "../components/blog/warning.astro";
 import TimeLine from "../components/page/TimeLine.astro";
 import LinkCard from "../components/page/LinkCard.astro";
 
-<BaseLayout title="关于">
-  <BaseCard title="关于">
-# About Frosti
+<BaseLayout title="About">
+  <BaseCard title="About">
+# 关于 Frosti
 
 ---
 
-## Brief introduction
+## 简单介绍
 
-Frosti is a static blog template created by EveSunMaple using Astro, designed to replace bloated Hexo. The author is only a high school student, and there are many imperfections in this template that need to be modified. If you are interested, please visit the Github repository.
+Frosti 是 EveSunMaple 使用 Astro 制作的静态博客模板，旨在替代臃肿的 Hexo。
 
-## TimeLine
+## 时间线
 
     <TimeLine
 
-items={[
-{ year: "2024-5-29", event: "Fixed accessibility issues, improved speed" },
-{ year: "2024-5-30", event: "Improved content, updated README, score 395" },
-{ year: "2024-6-2", event: "Added ProjectCard, refined Project page, removed lazy loading" },
-{ year: "2024-6-2", event: "Optimized link styles, pagespeed score 400" },
-{ year: "2024-6-12", event: "Added busuanzi counter" },
-{ year: "2024-6-16", event: "Converted CSS to SCSS, customized waline, improved Footnotes" },
-{ year: "2024-6-28", event: "Revamped SCSS to Tailwind, updated footer" },
-{ year: "2024-7-8", event: "Lighthouse score 400, enabled text compression, reverted footer" },
-{ year: "2024-7-9", event: "Added search functionality, refined footer and navbar" },
-{ year: "2024-7-9", event: "Fixed navigation issue" },
-{ year: "2024-7-10", event: "Added twikoo comments, improved search night mode" },
-{ year: "2024-7-13", event: "Added TOC, new guide article, new components" },
-{ year: "2024-7-18", event: "Added line numbers to code blocks, tutorial for code block themes" },
-{ year: "2024-7-19", event: "Fixed astro.config.mjs issues, improved day mode code block styles" },
-{ year: "2024-7-21", event: "Restructured main element, rewrote social links, menus, navbar, comments" },
-{ year: "2024-7-22", event: "Added back-to-top button, tablet styles, new article and repo card styles" },
-{ year: "2024-7-22", event: "Cleaned global.scss, added uncategorized tag for articles without tags" },
-{ year: "2024-7-23", event: "Fixed navbar disappearance on mobile" },
-{ year: "2024-7-24", event: "Fixed project card information issues, TOC navigation on blog and project pages" },
-{ year: "2024-7-26", event: "Fixed project card style issues, type issues checked" },
-{ year: "2024-7-29", event: "Separated line numbers and top bar from code, added code language display" },
-{ year: "2024-7-29", event: "Adjusted code block top bar, padding on mobile" },
-{ year: "2024-7-30", event: "Added tab page configuration to consts.ts, updated BaseLayout.astro" },
-{ year: "2024-8-1", event: "Added pagination buttons, integrated with sidebar" },
-{ year: "2024-8-2", event: "Added category feature, pagination for category and tag lists" },
-{ year: "2024-8-4", event: "Updated README, added Vercel Web Analytics" },
+items = {[
+  { year: "2024-5-29", event: "修复了无障碍问题，提升了速度" },
+  { year: "2024-5-30", event: "改进了内容，更新了 README，得分395" },
+  { year: "2024-6-2", event: "添加了 ProjectCard，优化了项目页面，移除了延迟加载" },
+  { year: "2024-6-2", event: "优化了链接样式，页面速度得分400" },
+  { year: "2024-6-12", event: "添加了 busuanzi 统计" },
+  { year: "2024-6-16", event: "将 CSS 转换为 SCSS，自定义了 waline，改进了脚注" },
+  { year: "2024-6-28", event: "将 SCSS 改为 Tailwind，更新了页脚" },
+  { year: "2024-7-8", event: "Lighthouse 得分400，启用了文本压缩，恢复了页脚" },
+  { year: "2024-7-9", event: "添加了搜索功能，优化了页脚和导航栏" },
+  { year: "2024-7-9", event: "修复了导航问题" },
+  { year: "2024-7-10", event: "添加了 twikoo 评论系统，改进了搜索夜间模式" },
+  { year: "2024-7-13", event: "添加了目录，新增了指南文章和新组件" },
+  { year: "2024-7-18", event: "为代码块添加了行号，提供了代码块主题教程" },
+  { year: "2024-7-19", event: "修复了 astro.config.mjs 问题，改进了日间模式下的代码块样式" },
+  { year: "2024-7-21", event: "重构了主要元素，重写了社交链接、菜单、导航栏和评论部分" },
+  { year: "2024-7-22", event: "添加了返回顶部按钮，优化了平板样式，新增了文章和仓库卡片样式" },
+  { year: "2024-7-22", event: "清理了 global.scss，给无标签文章添加了未分类标签" },
+  { year: "2024-7-23", event: "修复了移动端导航栏消失的问题" },
+  { year: "2024-7-24", event: "修复了项目卡片信息问题，修复了博客和项目页面上的目录导航问题" },
+  { year: "2024-7-26", event: "修复了项目卡片样式问题，检查了类型问题" },
+  { year: "2024-7-29", event: "将代码行号和顶部栏分离，添加了代码语言显示" },
+  { year: "2024-7-29", event: "调整了代码块顶部栏，优化了移动端的内边距" },
+  { year: "2024-7-30", event: "在 consts.ts 中添加了选项卡页面配置，更新了 BaseLayout.astro" },
+  { year: "2024-8-1", event: "添加了分页按钮，集成了侧边栏" },
+  { year: "2024-8-2", event: "添加了分类功能，分类和标签列表的分页功能" },
+  { year: "2024-8-4", event: "更新了 README，添加了 Vercel Web Analytics" },
 ]}
+
 />
 
   </BaseCard>

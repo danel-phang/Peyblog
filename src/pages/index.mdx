@@ -10,72 +10,52 @@ import Warning from "../components/blog/warning.astro";
 import TimeLine from "../components/page/TimeLine.astro";
 import LinkCard from "../components/page/LinkCard.astro";
 
-<BaseLayout title="首页">
-  <BaseCard title="首页">
+<BaseLayout title="Home">
+  <BaseCard title="Home">
     <div class="flex">
       <div class="p-6">
           # Hi there! 👋
-
-          This is the Frosti theme
-
-          A clean, elegant, and fast static blog template
+          **我是PeySync**
       </div>
     </div>
 
   </BaseCard>
 
   <BaseCard title="Home" image="/index.webp">
-# Frosti Introduction
+# Home
 
 ---
+**只是一个普通大学生**
 
-## Welcome to Frosti Blog Template
+**闲来无事写的一些随笔**
 
-### 🧊 Frosti
+## 🧊 Content
 
-**A clean, elegant, and fast static blog template! 🚀 Developed with [Astro](https://astro.build/)!**
+---
+<div class="grid grid-cols-2 gap-4">
+  <LinkCard
+    title="博客"
+    desc="想到的与看到的"
+    url="https://www.peyblog.wiki/blog"
+  />
 
-[**🖥️ Frosti Demo**](https://frosti.saroprock.com)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**🌏 Chinese README**](https://github.com/EveSunMaple/Frosti/blob/main/README.zh-CN.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**❤️ My Blog**](https://www.saroprock.com)
+  <LinkCard
+    title="项目"
+    desc="想法的实现"
+    url="https://www.peyblog.wiki/project"
+  />
+    <LinkCard
+    title="关于"
+    desc="我与博客"
+    url="https://www.peyblog.wiki/about"
+  />
 
-### Why Choose Frosti?
-
-- **Lightning-fast Access Speed and Excellent SEO**: Your blog content spreads quickly and efficiently.
-- **View Transition Animations**: Smooth visual experience with ViewTransitionsAPI.
-- **Integrated Sidebar**: Includes social info cards, theme switch, back-to-top button, and persistent article directory.
-- **Powerful Search Functionality**: Easily search articles using pagefind.
-- **Day/Night Mode**: Adapt to different reading environments.
-- **Rich Components**: Collapsible pages, link cards, timeline components, various alerts, code block copy button, image comparison, and end-of-article copyright information.
-- **Comment System**: Built with [Waline](https://waline.js.org/) for interactive discussions.
-- **Responsive Design**: Crafted with [Tailwind CSS](https://tailwindcss.com/) and [daisyUI](https://daisyui.com/) to fit different devices.
-
-### Feature Highlights
-
-- **Easy Installation and Use**: Install with just one command, customize everything in `consts.ts`.
-- **Variety of Article Components**: Enhance the presentation of your blog content.
-
-### How to Get Started?
-
-1. **Install Frosti**
-
-   Simply run the following command in your terminal:
-
-   ```sh
-   npm create astro@latest -- --template EveSunMaple/Frosti
-   ```
-
-2. **Configure the Comment System**
-
-   Set up [Waline](https://waline.js.org/) to enable comments. Check `src\components\Comment.astro` for details.
-
-### Future Plans
-
-- **Integrate Headless CMS**.
-- **Fix Known Style Bugs**.
-- **More Features Coming Soon...**
-
-### Special Thanks
-
-A big thanks to @[Saicaca](https://github.com/saicaca) and @[WRXinYue](https://github.com/WRXinYue) for their inspiration and help with Frosti.
+  <LinkCard
+    title="友链"
+    desc="有趣的灵魂"
+    url="https://www.peyblog.wiki/friend"
+  />
+</div>
 
   </BaseCard>
 </BaseLayout>
