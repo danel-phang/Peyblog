@@ -1,4 +1,5 @@
-# 🧊 Frosti
+# This project is a branch of [Frosti](https://github.com/EveSunMaple/Frosti)
+# Frosti
 
 **A clean, elegant, and fast static blog template! 🚀 Developed with [Astro](https://astro.build/)!**
 
