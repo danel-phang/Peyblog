@@ -1,4 +1,5 @@
-# 🧊 Frosti
+# 此项目为 [Frosti](https://github.com/EveSunMaple/Frosti) 的分支
+#  Frosti
 
 **一个简洁、优雅、快速的静态博客模板！🚀 使用 [Astro](https://astro.build/) 开发！**
 
@@ -6,10 +7,6 @@
 
 > [!NOTE]
 > 推荐先查看此主题的预览 -> https://frosti.saroprock.com
-
-## 🖥️ 预览
-
-![view](./Frosti_1.png)
 
 ## ⏲️ 性能
 
