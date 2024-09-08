@@ -2,7 +2,7 @@
 
 **一个简洁、优雅、快速的静态博客模板！🚀 使用 [Astro](https://astro.build/) 开发！**
 
-[**🖥️ Frosti Demo**](https://frosti.saroprock.com)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**🌏 中文 README**](https://github.com/EveSunMaple/Frosti/blob/main/README.zh-CN.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**❤️My Blog**](https://www.saroprock.com)
+[**🖥️ Frosti Demo**](https://frosti.saroprock.com)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**🌏 英文 README**](https://github.com/danel-phang/Peyblog/edit/master/README.en-EN.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**❤️My Blog**](https://www.saroprock.com)
 
 > [!NOTE]
 > 推荐先查看此主题的预览 -> https://frosti.saroprock.com
